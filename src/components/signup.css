@@ -1,0 +1,78 @@
+.mainDivSignUp {
+    background-image: url('../assets/backgroundSito2.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginDiv {
+    width: 40rem;
+    background-color: rgba(247, 244, 244, 0.1);
+    height: auto;
+    max-height: 90vh;
+    padding: 2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#emailHelp {
+    color: white;
+}
+
+.loginlink {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.divButton {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.signuplink {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.divButton>.btn {
+    width: 20rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 1px solid #32CD32;
+    color: #32CD32;
+}
+
+.divButton>.btn:hover {
+    background-color: #32CD32;
+    color: white;
+}
+
+form .form-label {
+    margin-bottom: 0.5rem;
+}
+
+form .form-control {
+    margin-bottom: 1rem;
+}

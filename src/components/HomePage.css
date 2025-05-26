@@ -1,0 +1,256 @@
+.homePageWrapper {
+    .HomePageDiv {
+        height: calc(100vh - 70px);
+        background-image: url("../assets/backgroundSito.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        color: white;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text1 {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .text2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .trending {
+        padding: 5rem;
+    }
+
+    .sub {
+        color: grey;
+    }
+
+    .trendingCat {
+        display: flex;
+    }
+
+    .titleDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .maxHeigh {
+        height: 100vh;
+    }
+
+    .BlackDiv {
+        background-color: #1B1B1B;
+        color: white;
+        height: 100vh;
+        display: flex;
+        /* Flexbox per centrare */
+        flex-direction: column;
+        /* Disposizione verticale */
+        justify-content: center;
+        /* Centra verticalmente */
+        align-items: center;
+        /* Centra orizzontalmente */
+        text-align: center;
+        /* Allinea il testo */
+    }
+
+    .buttonDiv {
+        margin-top: 2rem;
+        /* Spaziatura sopra i bottoni */
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        /* Spaziatura tra i bottoni */
+    }
+
+    .btnHome {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        transition: transform 0.2s ease, background-color 0.3s ease;
+        color: #32CD32;
+        background-color: transparent;
+        border: 2px solid #32CD32;
+        cursor: pointer;
+    }
+
+    .btnHome:hover {
+        transform: translateY(-3px);
+        background-color: #32CD32;
+        color: #ffffff;
+    }
+
+
+    .centerText {
+        text-align: center;
+        width: 100%;
+        background-size: auto;
+        background-position: center;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .btn-primary {
+        background-color: #32CD32 !important;
+        border-color: #32CD32 !important;
+    }
+
+
+
+    .greenColor {
+        color: #32CD32 !important;
+    }
+
+    .flex-horCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .catTitle {
+        margin-top: 2rem;
+    }
+
+    .table-section {
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Sfondo trasparente */
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: #ffffff;
+        display: flex;
+        /* Usa Flexbox */
+        flex-direction: column;
+        justify-content: center;
+        /* Centra verticalmente */
+        align-items: center;
+        /* Centra orizzontalmente */
+        text-align: center;
+    }
+
+    .table-section h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #32CD32;
+    }
+
+    table {
+        width: 100%;
+        max-width: 90%;
+        /* Limita la larghezza massima */
+        border-collapse: collapse;
+        margin: 0 auto;
+        /* Centra la tabella orizzontalmente */
+    }
+
+    thead {
+        background-color: #32CD32;
+        color: #ffffff;
+    }
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    tr:hover {
+        background-color: rgba(50, 205, 50, 0.2);
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text1 {
+        font-size: 4rem;
+    }
+
+    .text2 {
+        font-size: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-section table {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .text2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .buttonDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnHome {
+        width: 80%;
+        margin: 0.5rem 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .table-section {
+        padding: 1rem;
+    }
+
+    .table-section table {
+        font-size: 0.8rem;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .HomePageDiv {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text1 {
+        font-size: 2rem;
+    }
+
+    .text2 {
+        font-size: 1.2rem;
+    }
+
+    .btnHome {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
